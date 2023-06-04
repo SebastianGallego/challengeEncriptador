@@ -1,6 +1,6 @@
 *{
     background:#E5E5E5;
-    font-family: 'Inter';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 32px;
     line-height: 150%;
     margin: 0px;
@@ -40,13 +40,11 @@ main{
     align-items: center;
 }
 
-textarea:focus{
-    outline: none;
-}
 
 
 
-.text-entrada{
+
+.textEntrada{
     color: #0A3871;
     text-transform: lowercase;
     resize: none;
@@ -55,7 +53,7 @@ textarea:focus{
 }
 
 
-.text-salida{
+.textSalida{
     background: white;
     background-image: url("Muñeco.png");
     background-repeat:no-repeat;
@@ -74,7 +72,7 @@ textarea:focus{
     justify-content:space-around ;
 }
 
-#btn-encriptar{
+#btnEncriptar{
     background-color: #0A3871;
     border: 1px solid #0A3871;  
     border-radius: 24px;
@@ -84,7 +82,7 @@ textarea:focus{
     width: 328px;
 }
 
-#btn-desencriptar{
+#btnDesencriptar{
     background-color: #D8DFE8; 
     border: 1px solid #0A3871;  
     border-radius: 24px;
@@ -95,7 +93,7 @@ textarea:focus{
     margin-left: 30px;
 }
 
-#btn-copiar{
+#btnCopiar{
     border: 1px solid #0A3871;  
     border-radius: 24px;
     color: #0A3871;  

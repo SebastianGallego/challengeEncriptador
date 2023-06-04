@@ -1,30 +1,32 @@
-const textoEntrada = document.querySelector(".text-entrada"); // textArea de Entrada
-const textoSalida = document.querySelector(".text-salida");   //textArea de salida
+// Código de Encriptacion
+//     "a", "ai"
+//     "e", "enter"
+//     "i", "imes"
+//     "o", "ober"
+//     "u", "ufat"
+// 
 
-const matrizLlave = [ 
-    ["a", "ai"],
-    ["e", "enter"], 
-    ["i", "imes"],
-    ["o", "ober"],
-    ["u", "ufat"]
-]
+let textoEntrada = document.getElementById("entrada").value; // textArea de Entrada
+let textosalida = document.getElementById("salida") // textArea de Entrada
 
 function btnEncriptar(){
-    const textoEncriptado = encriptar(text-entrada.value);
+    
+    textoEntrada = document.getElementById("entrada").value;
 
-    text-salida.value = textoEncriptado;
-    text-entrada.value = "";
+    if(textoEntrada.length != 0) {
+        let textoEncriptado = textoEntrada
+            .replace(/e/gi, "enter")
+            .replace(/i/gi, "imes")
+            .replace(/a/gi, "ai")
+            .replace(/o/gi, "ober")
+            .replace(/u/gi, "ufat");
 
-}
-
-function encriptar(cadena){
-    cadena=cadena.toLowerCase();
-
-    for(let i=0; i<matrizLlave.length;i++){
-
-
-
-        
+         console.log(textoEncriptado);
+         console.log(textoEntrada.length);
     }
+    else {
+        alert("El textarea está vacío. Por favor, ingresa un mensaje.");
+        return; // Detiene la ejecución de la función si el textarea está vacío
+    }
+} 
 
-}
