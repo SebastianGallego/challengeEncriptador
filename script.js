@@ -7,11 +7,15 @@
 // 
 
 let textoEntrada = document.getElementById("entrada").value; // textArea de Entrada
-let textosalida = document.getElementById("salida") // textArea de Entrada
+let textoSalida = document.getElementById("salida"); // textArea de Entrada
+
+
+console.log(textoEntrada);
+console.log(textoEntrada.length);
 
 function btnEncriptar(){
     
-    textoEntrada = document.getElementById("entrada").value;
+    textoEntrada = document.getElementById("entrada").value
 
     if(textoEntrada.length != 0) {
         let textoEncriptado = textoEntrada
@@ -21,8 +25,11 @@ function btnEncriptar(){
             .replace(/o/gi, "ober")
             .replace(/u/gi, "ufat");
 
-         console.log(textoEncriptado);
-         console.log(textoEntrada.length);
+        
+        textoSalida.textContent = textoEncriptado;
+        textoSalida.style.backgroundImage = "url('encriptado.png')";
+        textoSalida.style.backgroundSize="30%";
+
     }
     else {
         alert("El textarea está vacío. Por favor, ingresa un mensaje.");
@@ -30,3 +37,14 @@ function btnEncriptar(){
     }
 } 
 
+
+function copiarAlPortapapeles() {
+    let texto = document.getElementById("salida");
+    texto.select();
+    document.execCommand("copy");
+    
+    textoEntrada.value = "";
+    
+    location.reload(); // recargo la pagina para limpiar reiniciar todo.    
+
+  }

@@ -34,22 +34,26 @@ main{
 
 }
 
+
+.tarjetaEntrada{
+    text-align: center;
+}
+
 .tarjetaSalida{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
-
-
-
-
 
 .textEntrada{
     color: #0A3871;
     text-transform: lowercase;
     resize: none;
     border-radius: 24px;
+    border: 2px solid ;
     padding: 10px;
+   
 }
 
 
@@ -59,12 +63,11 @@ main{
     background-repeat:no-repeat;
     background-position: center center;
     border-radius: 24px;
+    border: 2px solid ;
     color: #0A3871;
     resize: none;
     padding: 10px;
 }
-
-
 
 .botones{
     display: flex;
@@ -103,10 +106,6 @@ main{
     transition: transform 0.2s;
     
 }
-
-
-
-
 
 .copy{
     display: flex;
