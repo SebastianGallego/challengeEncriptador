@@ -11,28 +11,42 @@ La aplicación convierte las vocales mayusculas a minúsculas de forma automatic
 La página web cuenta con campos para que el usuario pueda ingresar el texto que desea encriptar o desencriptar y seleccionar la opción correspondiente. El resultado de la operación se muestra en la pantalla y existe la opción de copiar el texto encriptado o desencriptado al portapapeles mediante un botón de "copiar".
 
 🔒 Tabla de encriptacion
-🔑 Llave 	✏️ Reemplazo
-e 	enter
-i 	imes
-a 	ai
-o 	ober
-u 	ufat
+
+e >> enter
+
+i >> imes
+
+a >> ai
+
+o >> ober
+
+u >> ufat
 
 🔓 Tabla de desencriptacion
-🔑 Llave 	✏️ Reemplazo
-enter 	e
-imes 	i
-ai 	a
-ober 	o
-ufat 	u
 
-📑 Requisitos
+enter >> e
 
-    ✅ Debe funcionar solo con letras minúsculas
-    ✅ No deben ser utilizados letras con acentos ni caracteres especiales
-    ✅ Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original. (Ejemplos: "gato" => "gaitober" | "gaitober" => "gato")
-    ✅ La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-    ✅ El resultado debe ser mostrado en la pantalla.
-    ✅ Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+imes >>	i
 
-Autor
+ai >> a
+
+ober >>	o
+
+ufat >>	u
+
+📑 Funciones:
+
+    📌 Acepta mayúsculas y minúsculas. También acentos. 
+    📌 No deben ser utilizados letras con acentos ni caracteres especiales.
+    📌 Sobre el lado izquierdo se carga el texto a encriptar o desencriptar.
+    📌 El resultado es mostrado del lado derecho y cambia la imagen de fondo.
+    📌 Con el botón copiar se manda el resultado al portapapeles y se limpia la pagina.
+    📌 Al utilizar los botones encriptar o desencriptar sin ningun tengo el sistema envia un mensaje de error. 
+    
+
+Autor:
+
+Sebastián Gallego
+https://www.linkedin.com/in/sebastiangallego-dev/
+
+
